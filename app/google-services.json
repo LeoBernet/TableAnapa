@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "28234827449",
+    "firebase_url": "https://youtableanapa.firebaseio.com",
+    "project_id": "youtableanapa",
+    "storage_bucket": "youtableanapa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28234827449:android:f42bd743454d1a3fc87d68",
+        "android_client_info": {
+          "package_name": "com.android.bernet.youtableanapa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28234827449-vo282qkiir0i3prf77guookghpcesvit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjgd2DEh9gOAxMNzy1kOeoX3lQJHaN36c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28234827449-vo282qkiir0i3prf77guookghpcesvit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowLayoutActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle1">
+
+        <TextView
+            android:id="@+id/tvPriceDisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:text="@string/tel"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/imMain"
+            app:layout_constraintStart_toStartOf="@+id/imMain"
+            app:layout_constraintTop_toBottomOf="@+id/imMain" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/imMain"
+            app:layout_constraintStart_toStartOf="@+id/imMain"
+            app:layout_constraintTop_toBottomOf="@+id/imMain" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tvTelDisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:text="@string/price"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/imMain"
+            app:layout_constraintStart_toStartOf="@+id/imMain"
+            app:layout_constraintTop_toBottomOf="@+id/imMain" />
+
+        <TextView
+            android:id="@+id/tvTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@color/purple_700"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/imMain"
+            app:layout_constraintStart_toStartOf="@+id/imMain"
+            app:layout_constraintTop_toBottomOf="@+id/imMain" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imMain"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toBottomOf="@+id/imMain" />
+
+    <TextView
+        android:id="@+id/tvDisc1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imMain"
+        app:layout_constraintStart_toStartOf="@+id/imMain"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
